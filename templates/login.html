@@ -1,0 +1,11 @@
+<!doctype html>
+<title>Login</title>
+<h1>Login</h1>
+<form method="post" action="{{ url_for('login') }}">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="submit" value="Login">
+</form>
+<p>Don't have an account? <a href="{{ url_for('register') }}">Register here</a></p>
